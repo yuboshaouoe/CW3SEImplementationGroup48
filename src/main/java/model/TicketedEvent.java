@@ -16,9 +16,7 @@ public class TicketedEvent extends Event{
 
     public String getSponsorAccountEmail(){}
 
-    public boolean isSponsored(){}
-
-    public void setSponsorshipRequest(SponsorshipRequest sponsorshipRequest){}
+    //public boolean isSponsored(){}              //dont need as group of 3?
 
     public String toString(){}
 }

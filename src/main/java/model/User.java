@@ -10,16 +10,17 @@ public abstract class User {
 
     protected User(String email, String password, String paymentAccountEmail){
         this.email = email;
-        this.passwordHash = password;
-        //this.passwordHash = BCrypt.withDefaults().hashToString(12, password.toCharArray());
+        this.passwordHash = BCrypt.withDefaults().hashToString(12, password.toCharArray());
         this.paymentAccountEmail = paymentAccountEmail;
     }
 
+    public boolean checkPasswordMatch(String password){
+        return BCrypt.verifyer().verify(password.toCharArray(), passwordHash).verified;
+    }
 
-
-    public boolean checkPasswordMatch(String password){}
-
-    public void updatePassword(String newPassword){}
+    public void updatePassword(String newPassword){
+        this.passwordHash = BCrypt.withDefaults().hashToString(12, newPassword.toCharArray());
+    }
 
 
     public String getEmail(){return email;}
@@ -30,6 +31,7 @@ public abstract class User {
 
     public void setPaymentAccountEmail(String newPaymentAccountEmail){this.paymentAccountEmail = newPaymentAccountEmail;}
 
-    // public String toString(){} ez to cause bug, I ll left this
-
+    public String toString(){
+        return "User Email: " + this.email;
+    }
 }

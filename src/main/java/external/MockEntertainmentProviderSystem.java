@@ -1,37 +1,47 @@
 package external;
 
+import model.Event;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+
 public class MockEntertainmentProviderSystem implements EntertainmentProviderSystem{
 
+    private String orgName;
+    private String orgAddress;
+
+
     public MockEntertainmentProviderSystem(String orgName,
-                                            String orgAddress){}
+                                           String orgAddress){
+        this.orgName = orgName;
+        this.orgAddress = orgAddress;
+    }
 
     public void recordNewEvent(long eventNumber,
-                                String title,
-                                int numTickets){}
+                               String title,
+                               int numTickets){
+
+    }
 
     public void cancelEvent(long eventNumber,
-                             String message){}
+                            String message){}
 
     public void recordNewPerformance(long eventNumber,
-                                      long performanceNumber,
-                                      LocalDateTime startDateTime,
-                                      LocalDateTime endDateTime){}
+                                     long performanceNumber,
+                                     LocalDateTime startDateTime,
+                                     LocalDateTime endDateTime){}
 
     public int getNumTicketsLeft(long eventNumber,
-                                  long performanceNumber){}
+                                 long performanceNumber){}
 
     public void recordNewBooking(long eventNumber,
-                                  long performanceNumber,
-                                  long bookingNumber,
-                                  String consumerName,
-                                  String consumerEmail,
-                                  int bookedTickets){}
+                                 long performanceNumber,
+                                 long bookingNumber,
+                                 String consumerName,
+                                 String consumerEmail,
+                                 int bookedTickets){}
 
     public void cancelBooking(long bookingNumber){}
-
-    public void recordSponsorshipAcceptance(long eventNumber,
-                                             int sponsoredPricePercent){}
-
-    public void recordSponsorshipRejection(long eventNumber){}
 
 }
