@@ -1,6 +1,11 @@
 package controller;
 
+import external.MockPaymentSystem;
+import external.PaymentSystem;
+import state.EventState;
+import state.IBookingState;
 import state.IEventState;
+import state.UserState;
 
 public class Context {
 
@@ -17,9 +22,9 @@ public class Context {
 
     public PaymentSystem getPaymentSystem(){}
 
-    public IUserState getUserState(){}
+    public IUserState getUserState(){return userState}
 
-    public IBookingState getBookingState(){}
+    public IBookingState getBookingState(){return bookingState}
 
-    public IEventState getEventState(){}
+    public IEventState getEventState(){return eventState}
 }

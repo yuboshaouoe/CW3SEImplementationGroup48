@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Consumer extends User{
+
+    private String name;
+    private String phoneNumber;
+
+    private List<Booking> bookings;
+    private ConsumerPreferences preferences;
+
     public Consumer(String name,
                     String email,
                     String phoneNumber,
