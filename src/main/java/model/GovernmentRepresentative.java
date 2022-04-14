@@ -5,5 +5,7 @@ public class GovernmentRepresentative extends User {
                                     String password,
                                     String paymentAccountEmail){}
 
-    public String toString(){}
+    public String toString(){
+        return "Gov. Rep Email: " + this.getEmail();
+    }
 }

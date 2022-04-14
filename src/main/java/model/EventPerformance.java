@@ -60,5 +60,8 @@ public class EventPerformance {
 
     public int getVenueSize(){return this.venueSize;}
 
-    public String toString(){}
+    public String toString(){
+        String output = "PerformanceNo: " + this.performanceNumber + "\n At Event: " + this.event.toString();
+        return output;
+    }
 }

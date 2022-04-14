@@ -16,21 +16,23 @@ public class Consumer extends User{
         this.preferences = new ConsumerPreferences();
     }
 
-    public void addBooking(Booking booking){}
+    public void addBooking(Booking booking){bookings.add(booking);}     //add new booking to list
 
-    public String getName(){}
+    public String getName(){return this.name;}
 
-    public ConsumerPreferences getPreferences(){}
+    public ConsumerPreferences getPreferences(){return this.preferences;}
 
-    public void setPreferences(ConsumerPreferences preferences){}
+    public void setPreferences(ConsumerPreferences preferences){this.preferences = preferences;}
 
-    public List<Booking> getBookings(){}
+    public List<Booking> getBookings(){return this.bookings;}
 
-    public void notify(String message){}
+    public void notify(String message){System.out.println("Consumer has been notified");}
 
-    public void setName(String newName){}
+    public void setName(String newName){this.name = newName;}
 
-    public void setPhoneNumber(String newPhoneNumber){}
+    public void setPhoneNumber(String newPhoneNumber){this.phoneNumber = newPhoneNumber;}
 
-    public String toString(){}
+    public String toString(){
+        return "Cust name: " + this.name + "\nCust email: " + this.getEmail() + "\nCust phoneNum: " + this.phoneNumber;
+    }
 }

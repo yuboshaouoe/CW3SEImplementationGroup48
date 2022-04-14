@@ -19,9 +19,24 @@ public class BookingState implements IBookingState{
 
     public BookingState(IBookingState other){}
 
-    public Booking findBookingByNumber(long bookingNumber){}
+    public Booking findBookingByNumber(long bookingNumber){
 
-    public List<Booking> findBookingsByEventNumber(long eventNumber){}
+        for( Booking b : bookings){
+            if (b.getBookingNumber() == bookingNumber){
+                return b;
+            }
+        }
+        return null;
+
+    }
+
+    public List<Booking> findBookingsByEventNumber(long eventNumber){
+        List<Booking> foundBookings;
+        List<Event> allEvents =
+        for( Booking b : bookings){
+            if ()
+        }
+    }
 
     public Booking createBooking(Consumer booker,
                                  EventPerformance performance,
