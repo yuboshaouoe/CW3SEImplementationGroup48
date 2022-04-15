@@ -5,19 +5,23 @@ import model.Consumer;
 import model.Event;
 import model.EventPerformance;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class BookingState implements IBookingState{
 
     private long nextBookingNumber;
     private Collection<Booking> bookings;
 
-    public BookingState(){}
+    public BookingState(){
+        this.nextBookingNumber = 1;
+        this.bookings = Collections.emptyList();
+    }
 
-    public BookingState(IBookingState other){}
+    public BookingState(IBookingState other){
+        this.nextBookingNumber = ((BookingState)other).nextBookingNumber;
+        // dont know how to make deep copy of collection here. confused me for a long time
+
+    }
 
     public Booking findBookingByNumber(long bookingNumber){
 
