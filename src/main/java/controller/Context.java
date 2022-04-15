@@ -2,29 +2,38 @@ package controller;
 
 import external.MockPaymentSystem;
 import external.PaymentSystem;
-import state.EventState;
-import state.IBookingState;
-import state.IEventState;
-import state.UserState;
+import state.*;
 
 public class Context {
 
-    private MockPaymentSystem mockPaymentSystem;
+    private MockPaymentSystem paymentSystem;
     private IUserState userState;
     private IEventState eventState;
     private IBookingState bookingState;
 
 
 
-    public Context(){}
+    public Context(){
+        this.paymentSystem  = new MockPaymentSystem();
+        this.userState      = new UserState();
+        this.eventState     = new EventState();
+        this.bookingState   = new BookingState();
 
-    public Context(Context other){}
 
-    public PaymentSystem getPaymentSystem(){}
+    }
 
-    public IUserState getUserState(){return userState}
+    public Context(Context other){
+        this.userState     = new UserState(userState);
+        this.eventState    = new EventState(eventState);
+        this.bookingState  = new BookingState(bookingState);
+        paymentSystem      = (MockPaymentSystem) other.getPaymentSystem();
+    }
 
-    public IBookingState getBookingState(){return bookingState}
+    public PaymentSystem getPaymentSystem(){return paymentSystem;}
 
-    public IEventState getEventState(){return eventState}
+    public IUserState getUserState(){return userState;}
+
+    public IBookingState getBookingState(){return bookingState;}
+
+    public IEventState getEventState(){return eventState;}
 }
