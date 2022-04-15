@@ -3,30 +3,27 @@ package state;
 import model.GovernmentRepresentative;
 import model.User;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
 
 public class UserState implements IUserState{
 
-//    private Collection<User> users;
-
-    Map<String,User> users;
-//    private Collection<User> loggedInUsers;
-
+    private Map<String,User> users;
     private User currentUser;
 
     public UserState(){
-        this.users = Collections.emptyList();
-        //this.users = new HashMap<>();
+        this.users = Collections.emptyMap();
         this.currentUser = null;
+        GovernmentRepresentative representative =
+                new GovernmentRepresentative("prince.andrew@gov.uk",
+                                            "bruh moment",
+                                "prince.andrew@gov.uk");
+        this.users.put(representative.getEmail(), representative);
     }
 
     public UserState(IUserState other){
-        this.users = ((UserState)other).users;
-        this.currentUser = ((UserState)other).currentUser;
-
-        // check the deep copy here! (maybe i implement a shallow copy only)
+        this.users = other.getAllUsers();
+        this.currentUser = other.getCurrentUser();
     }
 
     public void addUser(User user){users.put(user.getEmail(), user);}

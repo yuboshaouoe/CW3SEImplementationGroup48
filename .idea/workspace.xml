@@ -4,48 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="Initial Classes set-up">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/BookingStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/EventStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="Model/states initial implementation Yubo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/external/EntertainmentProviderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/EntertainmentProviderSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/external/MockEntertainmentProviderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/MockEntertainmentProviderSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/EventPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventPerformance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/TicketedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TicketedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/state/BookingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/BookingState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/state/IBookingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/IBookingState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/state/ILogState.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/state/UserState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/UserState.java" afterDir="false" />
     </list>
-    <list id="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" name="Changes by callu" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CancelBookingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CancelBookingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Booking.java" afterDir="false" />
-    </list>
-    <list id="17aab2b8-4f9c-4c94-92c5-47810a47d13d" name="Changes by Callum" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/EntertainmentProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EntertainmentProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/EventPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventPerformance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/GovernmentRepresentative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GovernmentRepresentative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/NonTicketedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/NonTicketedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/TicketedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TicketedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/state/BookingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/BookingState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/state/EventState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/EventState.java" afterDir="false" />
-    </list>
-    <list id="bd1d0754-2dca-4727-86a2-cac1839583cc" name="Changes by jiajili" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/GovernmentRepresentative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GovernmentRepresentative.java" afterDir="false" />
-    </list>
+    <list id="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" name="Changes by callu" comment="Changes by callum 1" />
+    <list id="17aab2b8-4f9c-4c94-92c5-47810a47d13d" name="Changes by Callum" comment="Changes by Callum 2" />
+    <list id="bd1d0754-2dca-4727-86a2-cac1839583cc" name="Changes by jiajili" comment="Changes by jiajili" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,93 +63,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/model/EventPerformance.java">
-      <ranges>
-        <range start1="6" end1="6" start2="6" end2="20" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="16" end1="17" start2="30" end2="43" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="18" end1="19" start2="44" end2="45" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="20" end1="21" start2="46" end2="47" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="22" end1="23" start2="48" end2="49" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="24" end1="25" start2="50" end2="51" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="26" end1="27" start2="52" end2="53" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="28" end1="29" start2="54" end2="55" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="30" end1="31" start2="56" end2="57" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="32" end1="33" start2="58" end2="59" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="34" end1="35" start2="60" end2="61" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="36" end1="37" start2="62" end2="66" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/state/BookingState.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="12" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="4" end1="4" start2="14" end2="17" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="8" end1="9" start2="21" end2="29" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="10" end1="11" start2="30" end2="39" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="13" end1="16" start2="41" end2="44" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="17" end1="17" start2="45" end2="46" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/Consumer.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="3" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="5" end1="5" start2="6" end2="13" changelist="bd1d0754-2dca-4727-86a2-cac1839583cc" />
-        <range start1="10" end1="10" start2="18" end2="23" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="12" end1="13" start2="25" end2="26" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="14" end1="15" start2="27" end2="28" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="16" end1="17" start2="29" end2="30" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="18" end1="19" start2="31" end2="32" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="20" end1="21" start2="33" end2="34" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="22" end1="23" start2="35" end2="36" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="24" end1="25" start2="37" end2="38" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="26" end1="27" start2="39" end2="40" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="28" end1="29" start2="41" end2="44" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/Booking.java">
-      <ranges>
-        <range start1="5" end1="5" start2="5" end2="14" changelist="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" />
-        <range start1="10" end1="11" start2="19" end2="22" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="12" end1="13" start2="23" end2="24" changelist="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" />
-        <range start1="14" end1="15" start2="25" end2="26" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="16" end1="17" start2="27" end2="28" changelist="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" />
-        <range start1="18" end1="19" start2="29" end2="30" changelist="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" />
-        <range start1="20" end1="21" start2="31" end2="32" changelist="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" />
-        <range start1="22" end1="23" start2="33" end2="34" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="24" end1="25" start2="35" end2="38" changelist="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" />
-        <range start1="26" end1="27" start2="39" end2="43" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/GovernmentRepresentative.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="4" changelist="bd1d0754-2dca-4727-86a2-cac1839583cc" />
-        <range start1="5" end1="6" start2="6" end2="9" changelist="bd1d0754-2dca-4727-86a2-cac1839583cc" />
-        <range start1="7" end1="8" start2="10" end2="13" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/TicketedEvent.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="7" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="8" end1="9" start2="12" end2="17" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="10" end1="11" start2="18" end2="19" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="12" end1="13" start2="20" end2="21" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="14" end1="15" start2="22" end2="23" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="16" end1="17" start2="24" end2="25" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="18" end1="21" start2="26" end2="27" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="22" end1="23" start2="28" end2="36" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/controller/Context.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="6" changelist="bd1d0754-2dca-4727-86a2-cac1839583cc" />
-        <range start1="3" end1="3" start2="7" end2="8" changelist="bd1d0754-2dca-4727-86a2-cac1839583cc" />
-        <range start1="5" end1="5" start2="10" end2="18" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="11" end1="12" start2="24" end2="25" changelist="bd1d0754-2dca-4727-86a2-cac1839583cc" />
-        <range start1="13" end1="14" start2="26" end2="27" changelist="bd1d0754-2dca-4727-86a2-cac1839583cc" />
-        <range start1="15" end1="16" start2="28" end2="29" changelist="bd1d0754-2dca-4727-86a2-cac1839583cc" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -280,7 +158,35 @@
       <option name="project" value="LOCAL" />
       <updated>1649898503455</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Model/states initial implementation Yubo">
+      <created>1649976876994</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649976876994</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changes by callum 1">
+      <created>1649976904601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649976904601</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes by Callum 2">
+      <created>1649976921764</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649976921764</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changes by jiajili">
+      <created>1649976932818</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649976932818</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,8 +201,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Classes set-up" />
     <MESSAGE value="Changes by callu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by callu" />
+    <MESSAGE value="Initial Classes set-up" />
+    <MESSAGE value="Model/states initial implementation Yubo" />
+    <MESSAGE value="Changes by callum 1" />
+    <MESSAGE value="Changes by Callum 2" />
+    <MESSAGE value="Changes by jiajili" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by jiajili" />
   </component>
 </project>
