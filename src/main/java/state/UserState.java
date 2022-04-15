@@ -9,23 +9,33 @@ import java.util.Map;
 
 public class UserState implements IUserState{
 
-    private Collection<User> users;
-    private Collection<User> loggedInUsers;
+//    private Collection<User> users;
+
+    Map<String,User> users;
+//    private Collection<User> loggedInUsers;
+
+    private User currentUser;
 
     public UserState(){
         this.users = Collections.emptyList();
-        this.loggedInUsers = null;
+        //this.users = new HashMap<>();
+        this.currentUser = null;
     }
 
-    public UserState(IUserState other){}
+    public UserState(IUserState other){
+        this.users = ((UserState)other).users;
+        this.currentUser = ((UserState)other).currentUser;
 
-    public void addUser(User user){}
+        // check the deep copy here! (maybe i implement a shallow copy only)
+    }
 
-    public Map<String, User> getAllUsers(){}
+    public void addUser(User user){users.put(user.getEmail(), user);}
 
-    public User getCurrentUser(){}
+    public Map<String, User> getAllUsers(){return users;}
 
-    public void setCurrentUser(User user){}
+    public User getCurrentUser(){return currentUser;}
+
+    public void setCurrentUser(User user){currentUser = user;}
 
 }
 

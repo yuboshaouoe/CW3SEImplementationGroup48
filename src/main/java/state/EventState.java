@@ -17,8 +17,7 @@ public class EventState implements IEventState{
 
     public EventState(IEventState other){}
 
-    public List<Event> getAllEvents(){
-        return allEvents;
+    public List<Event> getAllEvents(){return allEvents;
     }
 
     public Event findEventByNumber(long eventNumber){
