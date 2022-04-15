@@ -18,14 +18,13 @@ public class Context {
         this.userState      = new UserState();
         this.eventState     = new EventState();
         this.bookingState   = new BookingState();
-
-
     }
 
     public Context(Context other){
         this.userState     = new UserState(userState);
         this.eventState    = new EventState(eventState);
         this.bookingState  = new BookingState(bookingState);
+        // shallow copy of paymentSystem with deep copy of userState ... etc here
         paymentSystem      = (MockPaymentSystem) other.getPaymentSystem();
     }
 
