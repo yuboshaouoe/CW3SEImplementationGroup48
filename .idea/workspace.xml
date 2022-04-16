@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="Finished Logging, Most of state, and most of external">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/external/MockEntertainmentProviderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/MockEntertainmentProviderSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/external/MockPaymentSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/MockPaymentSystem.java" afterDir="false" />
+    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="fixed all external classes">
+      <change beforePath="$PROJECT_DIR$/src/main/java/logging/LogEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logging/LogEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logging/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logging/Logger.java" afterDir="false" />
     </list>
     <list id="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" name="Changes by callu" comment="Changes by callum 1" />
     <list id="17aab2b8-4f9c-4c94-92c5-47810a47d13d" name="Changes by Callum" comment="Changes by Callum 2" />
@@ -192,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649976932818</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed all external classes">
+      <created>1650141711271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650141711271</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +219,7 @@
     <MESSAGE value="Changes by callum 1" />
     <MESSAGE value="Changes by Callum 2" />
     <MESSAGE value="Changes by jiajili" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by jiajili" />
+    <MESSAGE value="fixed all external classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed all external classes" />
   </component>
 </project>
