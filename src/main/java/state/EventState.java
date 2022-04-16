@@ -3,24 +3,36 @@ package state;
 import model.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
 public class EventState implements IEventState{
 
-    private List<Event> allEvents;
-    private List<EventPerformance> allPerf;
-    private long eventNumCounter = 0;
-    private long performanceNumCounter = 0;
+    private List<Event> events;
+    //private List<EventPerformance> allPerf;
+    private long nextEventNumber;
+    private long nextPerformanceNumber;
 
-    public EventState(){}
+    public EventState(){
+        this.events = new ArrayList<Event>();
+        this.nextEventNumber = 1;
+        this.nextPerformanceNumber = 1;
 
-    public EventState(IEventState other){}
+    }
 
-    public List<Event> getAllEvents(){return this.allEvents;}
+    public EventState(IEventState other){
+        EventState newState = (EventState) other;
+        this.events = new ArrayList<Event>();
+        this.events.addAll(newState.getAllEvents());
+        this.nextEventNumber = newState.nextEventNumber;
+        this.nextPerformanceNumber = newState.nextPerformanceNumber;
+    }
+
+    public List<Event> getAllEvents(){return this.events;}
 
     public Event findEventByNumber(long eventNumber){
-        for(Event e : allEvents){
+        for(Event e : events){
             if (e.getEventNumber() == eventNumber){
                 return e;
             }
@@ -31,9 +43,9 @@ public class EventState implements IEventState{
     public NonTicketedEvent createNonTicketedEvent(EntertainmentProvider organiser,
                                                     String title,
                                                     EventType type){
-        eventNumCounter ++;
-        NonTicketedEvent newEvent = new NonTicketedEvent(eventNumCounter, organiser, title, type);
-        allEvents.add(newEvent);
+        NonTicketedEvent newEvent = new NonTicketedEvent(nextEventNumber, organiser, title, type);
+        nextEventNumber ++;
+        events.add(newEvent);
         return newEvent;
     }
 
@@ -43,9 +55,9 @@ public class EventState implements IEventState{
                                               double ticketPrice,
                                               int numTickets){
 
-        eventNumCounter ++;
-        TicketedEvent newEvent = new TicketedEvent(eventNumCounter, organiser, title, type, ticketPrice,numTickets);
-        allEvents.add(newEvent);
+        TicketedEvent newEvent = new TicketedEvent(nextEventNumber, organiser, title, type, ticketPrice,numTickets);
+        nextEventNumber ++;
+        events.add(newEvent);
         return newEvent;
     }
 
@@ -60,9 +72,10 @@ public class EventState implements IEventState{
                                                     int capacityLimit,
                                                     int venueSize) {
 
-        performanceNumCounter++;
-        EventPerformance performance = new EventPerformance(performanceNumCounter, event, venueAddress, startDateTime, endDateTime, performerNames, hasSocialDistancing, hasAirFiltration, isOutdoors, capacityLimit, venueSize);
-        allPerf.add(performance);
+        EventPerformance performance = new EventPerformance(nextPerformanceNumber, event, venueAddress, startDateTime, endDateTime, performerNames, hasSocialDistancing, hasAirFiltration, isOutdoors, capacityLimit, venueSize);
+
+        nextPerformanceNumber++;
+        event.addPerformance(performance);
         return performance;
 
     }

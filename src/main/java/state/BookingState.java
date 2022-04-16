@@ -2,25 +2,28 @@ package state;
 
 import model.Booking;
 import model.Consumer;
+import model.Event;
 import model.EventPerformance;
 
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class BookingState implements IBookingState{
 
     private long nextBookingNumber;
-    private Collection<Booking> bookings;
-    private long currentBookingNum;
-    private IEventState eventInterface;
+    private List<Booking> bookings;
+
 
     public BookingState(){
         this.nextBookingNumber = 1;
-        this.bookings = Collections.emptyList();
+        this.bookings = new ArrayList<Booking>();
     }
 
     public BookingState(IBookingState other){
-        this.nextBookingNumber = ((BookingState)other).nextBookingNumber;
-        // dont know how to make deep copy of collection here. confused me for a long time
+        BookingState newState = (BookingState)other;
+        this.nextBookingNumber = newState.nextBookingNumber;
+        this.bookings = new ArrayList<Booking>();
+        this.bookings.addAll(newState.getAllBookings());
 
     }
 
@@ -35,17 +38,23 @@ public class BookingState implements IBookingState{
     }
 
     public List<Booking> findBookingsByEventNumber(long eventNumber){
-        List<Booking> foundBookings;
-        List<Event> allEvents =
+        List<Booking> foundBookings = null;
         for( Booking b : bookings){
-            if ()
+            if (b.getEventPerformance().getEvent().getEventNumber() == eventNumber){
+                foundBookings.add(b);
+            }
         }
+        return foundBookings;
     }
 
     public Booking createBooking(Consumer booker,
                                  EventPerformance performance,
                                  int numTickets,
                                  double amountPaid){
-
+        Booking b = new Booking(nextBookingNumber, booker, performance, numTickets, amountPaid, LocalDateTime.now());
+        bookings.add(b);
+        nextBookingNumber++;
+        return b;
     }
+    public List<Booking> getAllBookings(){return this.bookings;}
 }

@@ -4,6 +4,7 @@ import model.GovernmentRepresentative;
 import model.User;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 
 public class UserState implements IUserState{
@@ -12,7 +13,7 @@ public class UserState implements IUserState{
     private User currentUser;
 
     public UserState(){
-        this.users = Collections.emptyMap();
+        this.users = new HashMap<>();
         this.currentUser = null;
         GovernmentRepresentative representative =
                 new GovernmentRepresentative("prince.andrew@gov.uk",
@@ -22,7 +23,8 @@ public class UserState implements IUserState{
     }
 
     public UserState(IUserState other){
-        this.users = other.getAllUsers();
+        this.users = new HashMap<>();
+        this.users.putAll(other.getAllUsers());
         this.currentUser = other.getCurrentUser();
     }
 
