@@ -8,7 +8,10 @@ public class Logger{
     public static Logger getInstance(){}
 
     public void logAction(String callerName,
-                           Object result){}
+                           Object result){
+        LogEntry newEntry = new LogEntry(callerName, result, Collections.emptyMap());
+        this.fullLog.add(newEntry);
+    }
 
     public void logAction(String callerName,
                            Object result,

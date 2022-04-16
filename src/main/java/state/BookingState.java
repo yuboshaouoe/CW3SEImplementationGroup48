@@ -2,7 +2,6 @@ package state;
 
 import model.Booking;
 import model.Consumer;
-import model.Event;
 import model.EventPerformance;
 
 import java.util.*;
@@ -11,6 +10,8 @@ public class BookingState implements IBookingState{
 
     private long nextBookingNumber;
     private Collection<Booking> bookings;
+    private long currentBookingNum;
+    private IEventState eventInterface;
 
     public BookingState(){
         this.nextBookingNumber = 1;
@@ -31,7 +32,6 @@ public class BookingState implements IBookingState{
             }
         }
         return null;
-
     }
 
     public List<Booking> findBookingsByEventNumber(long eventNumber){
