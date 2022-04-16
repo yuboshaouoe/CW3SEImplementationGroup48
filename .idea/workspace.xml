@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="Model/states initial implementation Yubo">
+    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="Finished Logging, Most of state, and most of external">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/state/UserState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/UserState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/external/MockEntertainmentProviderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/MockEntertainmentProviderSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/external/MockPaymentSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/MockPaymentSystem.java" afterDir="false" />
     </list>
     <list id="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" name="Changes by callu" comment="Changes by callum 1" />
     <list id="17aab2b8-4f9c-4c94-92c5-47810a47d13d" name="Changes by Callum" comment="Changes by Callum 2" />
@@ -75,16 +76,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/asi2m/UOE coursework/gradle-6.6.1-all/gradle-6.6.1/bin&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/asi2m/UOE coursework/CW3SEImplementationGroup48/src/main/java/external",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asi2m\UOE coursework\CW3SEImplementationGroup48\src\main\java\external" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.CW3SEImplementationGroup48 [build]">
     <configuration name="CW3SEImplementationGroup48 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
