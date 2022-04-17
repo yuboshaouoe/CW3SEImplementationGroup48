@@ -48,7 +48,7 @@ public class BookEventCommand implements ICommand{
                                     double pricePaid = eventTicket.getOriginalTicketPrice();
                                     pricePaid = pricePaid * numTicketsRequested;
 
-                                    String sellerEmail = eventTicket.getOrganiser().getEmail();
+                                    String sellerEmail = eventTicket.getOrganiser().getPaymentAccountEmail();
 
                                     boolean paid = context.getPaymentSystem().processPayment(userEmail, sellerEmail, pricePaid);
 
