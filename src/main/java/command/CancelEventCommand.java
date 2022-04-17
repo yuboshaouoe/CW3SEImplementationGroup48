@@ -1,7 +1,13 @@
 package command;
 
 import controller.Context;
-import model.EventType;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import model.*;
+
+import static java.util.Objects.isNull;
 
 public class CancelEventCommand implements ICommand{
 
