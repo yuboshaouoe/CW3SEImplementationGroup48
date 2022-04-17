@@ -1,6 +1,7 @@
 package command;
 
 import controller.Context;
+import external.EntertainmentProviderSystem;
 import model.EntertainmentProvider;
 import model.EventType;
 import model.TicketedEvent;
@@ -24,9 +25,8 @@ public class CreateTicketedEventCommand extends CreateEventCommand {
         if (isUserAllowedToCreateEvent(context)) {
             EventState eventState = (EventState) context.getEventState();
             UserState userState = (UserState) context.getUserState();
-            TicketedEvent event = eventState.createTicketedEvent((EntertainmentProvider) userState.getCurrentUser(),
+            eventState.createTicketedEvent((EntertainmentProvider) userState.getCurrentUser(),
                     title, type, ticketPrice, numTickets);
-            eventNumberResult = event.getEventNumber();
         }
     }
 }

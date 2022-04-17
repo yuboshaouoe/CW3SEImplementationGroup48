@@ -1,6 +1,8 @@
 package command;
 
 import controller.Context;
+import external.EntertainmentProviderSystem;
+import external.MockPaymentSystem;
 import model.EntertainmentProvider;
 import model.EventType;
 import model.NonTicketedEvent;
@@ -18,10 +20,8 @@ public class CreateNonTicketedEventCommand extends CreateEventCommand{
 
             EventState eventState = (EventState) context.getEventState();
             UserState userState = (UserState) context.getUserState();
-
-            // Create event and event number
-            NonTicketedEvent event = eventState.createNonTicketedEvent((EntertainmentProvider) userState.getCurrentUser(),title, type);
-            eventNumberResult = event.getEventNumber();
+            // Create event
+            eventState.createNonTicketedEvent((EntertainmentProvider) userState.getCurrentUser(),title, type);
         }
     }
 }

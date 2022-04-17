@@ -1,5 +1,6 @@
 package state;
 
+import external.EntertainmentProviderSystem;
 import model.*;
 
 import java.time.LocalDateTime;
@@ -46,6 +47,8 @@ public class EventState implements IEventState{
         NonTicketedEvent newEvent = new NonTicketedEvent(nextEventNumber, organiser, title, type);
         nextEventNumber ++;
         events.add(newEvent);
+        newEvent.getOrganiser().getProviderSystem().recordNewEvent(newEvent.getEventNumber(),
+                newEvent.getTitle(), 0);
         return newEvent;
     }
 
@@ -58,6 +61,9 @@ public class EventState implements IEventState{
         TicketedEvent newEvent = new TicketedEvent(nextEventNumber, organiser, title, type, ticketPrice,numTickets);
         nextEventNumber ++;
         events.add(newEvent);
+        newEvent.getOrganiser().getProviderSystem().recordNewEvent(newEvent.getEventNumber(),
+                                                                   newEvent.getTitle(),
+                                                                   newEvent.getNumTickets());
         return newEvent;
     }
 

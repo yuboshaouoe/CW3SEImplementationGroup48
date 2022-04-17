@@ -5,9 +5,10 @@ public enum EventType {
     MOVIE,
     MUSIC,
     SPORTS,
-    THEATRE;
+    THEATRE
+}
 
-    /*public static EventType[] values(){
+/*public static EventType[] values(){
         EventType[] types = {DANCE, MOVIE, MUSIC, SPORTS, THEATRE};
         return types;
     }
@@ -24,6 +25,3 @@ public enum EventType {
     }
 
      */
-
-
-}

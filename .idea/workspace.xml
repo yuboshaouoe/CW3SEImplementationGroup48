@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="fixed all external classes">
-      <change beforePath="$PROJECT_DIR$/src/main/java/logging/LogEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logging/LogEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logging/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logging/Logger.java" afterDir="false" />
+    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="logging finished by Callum">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/CancelBookingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CancelBookingCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/CancelEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CancelEventCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/CreateNonTicketedEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CreateNonTicketedEventCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/CreateTicketedEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CreateTicketedEventCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/ListConsumerBookingsCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/ListEventBookingsCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/ListEventsCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/LogoutCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/EventStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/state/EventState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/EventState.java" afterDir="false" />
     </list>
     <list id="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" name="Changes by callu" comment="Changes by callum 1" />
-    <list id="17aab2b8-4f9c-4c94-92c5-47810a47d13d" name="Changes by Callum" comment="Changes by Callum 2" />
+    <list id="17aab2b8-4f9c-4c94-92c5-47810a47d13d" name="Changes by Callum" comment="Changes by Callum 2">
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/BookEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/BookEventCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/CancelEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CancelEventCommand.java" afterDir="false" />
+    </list>
     <list id="bd1d0754-2dca-4727-86a2-cac1839583cc" name="Changes by jiajili" comment="Changes by jiajili" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +77,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/command/CancelEventCommand.java">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="10" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
+        <range start1="19" end1="19" start2="25" end2="59" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -198,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650141711271</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="logging finished by Callum">
+      <created>1650142106930</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650142106930</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +249,7 @@
     <MESSAGE value="Changes by Callum 2" />
     <MESSAGE value="Changes by jiajili" />
     <MESSAGE value="fixed all external classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed all external classes" />
+    <MESSAGE value="logging finished by Callum" />
+    <option name="LAST_COMMIT_MESSAGE" value="logging finished by Callum" />
   </component>
 </project>

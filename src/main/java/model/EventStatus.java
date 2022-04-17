@@ -4,7 +4,7 @@ import java.util.List;
 
 public enum EventStatus {
     ACTIVE,
-    CANCELLED;
+    CANCELLED
 }
 
     /*public static EventStatus[] values(){

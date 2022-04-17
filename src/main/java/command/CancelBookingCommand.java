@@ -34,7 +34,7 @@ public class CancelBookingCommand implements ICommand{
                     if(booking.getStatus().equals(BookingStatus.Active)) { //check booking is active
                         LocalDateTime currTime = LocalDateTime.now();
                         EventPerformance perf = booking.getEventPerformance();
-                        String sellerEmail = perf.getEvent().getOrganiser().getEmail();
+                        String sellerEmail = perf.getEvent().getOrganiser().getPaymentAccountEmail();
 
                         if (perf.getStartDateTime().isAfter(currTime.plusHours(24))) { //check start time is further than 24 hours away
                             boolean refunded = context.getPaymentSystem().processRefund(userEmail, sellerEmail, payment);
