@@ -2,19 +2,18 @@ package command;
 
 import controller.Context;
 import model.EntertainmentProvider;
-import command.ICommand;
 
 import java.util.List;
 
 public class RegisterEntertainmentProviderCommand implements ICommand{
-    private final String orgName;
-    private final String orgAddress;
-    private final String paymentAccountEmail;
-    private final String mainRepName;
-    private final String mainRepEmail;
-    private final String passWord;
-    private final List<String> otherRepNames;
-    private final List<String> otherRepEmails;
+    private String orgName;
+    private String orgAddress;
+    private String paymentAccountEmail;
+    private String mainRepName;
+    private String mainRepEmail;
+    private String passWord;
+    private List<String> otherRepNames;
+    private List<String> otherRepEmails;
     private EntertainmentProvider newEntertainmentProviderResult;
     private EntertainmentProvider attribute;
 
@@ -37,7 +36,7 @@ public class RegisterEntertainmentProviderCommand implements ICommand{
     }
 
     public void execute(Context context){
-        boolean allNotNone = !(orgName == null || orgAddress == null || paymentAccountEmail == null || mainRepName == null || mainRepEmail == null || passWord == null || otherRepEmails == null || otherRepNames == null);
+        boolean allNotNone = (orgName != null || orgAddress != null || paymentAccountEmail != null || mainRepName != null || mainRepEmail != null || passWord != null || otherRepEmails != null || otherRepNames != null);
         boolean noSameEmail = ! context.getUserState().getAllUsers().containsKey(mainRepEmail);
         boolean noSameNameOrAddress = ! (context.getUserState().getAllUsers().containsKey(orgName) || context.getUserState().getAllUsers().containsKey(orgAddress));
 
