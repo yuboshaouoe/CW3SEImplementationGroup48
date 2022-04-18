@@ -1,10 +1,24 @@
 package command;
 
 import controller.Context;
+import model.EntertainmentProvider;
+import model.User;
 
 import java.util.List;
+import java.util.Map;
 
-public class UpdateEntertainmentProviderProfileCommand {
+public class UpdateEntertainmentProviderProfileCommand extends UpdateProfileCommand{
+
+    private String oldPassword;
+    private String newOrgName;
+    private String newOrgAddress;
+    private String newPaymentAccountEmail;
+    private String newMainRepName;
+    private String newMainRepEmail;
+    private String newPassword;
+    private List<String> newOtherRepNames;
+    private List<String> newOtherRepEmails;
+
 
     public UpdateEntertainmentProviderProfileCommand(String oldPassword,
                                                      String newOrgName,

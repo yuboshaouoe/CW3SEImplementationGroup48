@@ -18,10 +18,13 @@ public class CreateNonTicketedEventCommand extends CreateEventCommand{
     public void execute(Context context){
         if (isUserAllowedToCreateEvent(context)) {
 
-            EventState eventState = (EventState) context.getEventState();
-            UserState userState = (UserState) context.getUserState();
+            //EventState eventState = (EventState) context.getEventState();
+            //UserState userState = (UserState) context.getUserState();
             // Create event
-            eventState.createNonTicketedEvent((EntertainmentProvider) userState.getCurrentUser(),title, type);
+
+            EntertainmentProvider curr = (EntertainmentProvider) context.getUserState().getCurrentUser();
+
+            context.getEventState().createNonTicketedEvent(curr,title, type);
         }
     }
 }
