@@ -1,13 +1,14 @@
 package logging;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Map;
 import java.util.List;
 
 public class Logger{
 
-    private static List<Logger> allLog = null;
-    private static List<LogEntry> fullLog = null;
+    private static List<Logger> allLog = new ArrayList<>();
+    private static List<LogEntry> fullLog = new ArrayList<>();
 
     private Logger(){}
 
