@@ -4,7 +4,7 @@ import controller.Context;
 import state.IEventState;
 import state.IUserState;
 
-public class LogoutCommand {
+public class LogoutCommand implements ICommand{
 
     public LogoutCommand(){}
 

@@ -5,7 +5,7 @@ import model.EntertainmentProvider;
 import model.EventType;
 import model.User;
 
-public class CreateEventCommand {
+public class CreateEventCommand implements ICommand{
 
     protected Long eventNumberResult;
     protected String title;
@@ -20,6 +20,9 @@ public class CreateEventCommand {
         User currentUser = context.getUserState().getCurrentUser();
         return currentUser instanceof EntertainmentProvider;
     }
+
+    @Override
+    public void execute(Context context) {}
 
     public Long getResult(){
         return eventNumberResult;

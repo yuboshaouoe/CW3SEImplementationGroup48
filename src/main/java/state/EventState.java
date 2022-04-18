@@ -30,7 +30,7 @@ public class EventState implements IEventState{
         this.nextPerformanceNumber = newState.nextPerformanceNumber;
     }
 
-    public List<Event> getAllEvents(){return this.events;}
+    public List<Event> getAllEvents(){return events;}
 
     public Event findEventByNumber(long eventNumber){
         for(Event e : events){

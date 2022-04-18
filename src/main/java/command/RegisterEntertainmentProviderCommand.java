@@ -36,14 +36,31 @@ public class RegisterEntertainmentProviderCommand implements ICommand{
     }
 
     public void execute(Context context){
-        boolean allNotNone = (orgName != null || orgAddress != null || paymentAccountEmail != null || mainRepName != null || mainRepEmail != null || passWord != null || otherRepEmails != null || otherRepNames != null);
-        boolean noSameEmail = ! context.getUserState().getAllUsers().containsKey(mainRepEmail);
-        boolean noSameNameOrAddress = ! (context.getUserState().getAllUsers().containsKey(orgName) || context.getUserState().getAllUsers().containsKey(orgAddress));
+        boolean allNotNone = (
+                orgName != null ||
+                orgAddress != null ||
+                paymentAccountEmail != null ||
+                mainRepName != null ||
+                mainRepEmail != null ||
+                passWord != null ||
+                otherRepEmails != null ||
+                otherRepNames != null);
+        boolean noSameEmail = !context.getUserState().getAllUsers().containsKey(mainRepEmail);
+        boolean noSameNameOrAddress = !(context.getUserState().getAllUsers().containsKey(orgName) ||
+                                        context.getUserState().getAllUsers().containsKey(orgAddress));
 
         boolean verifyPassed = allNotNone && noSameEmail && noSameNameOrAddress;
 
         if (verifyPassed){
-            newEntertainmentProviderResult = new EntertainmentProvider(orgName, orgAddress, paymentAccountEmail, mainRepName, mainRepEmail, passWord, otherRepNames, otherRepEmails);
+            newEntertainmentProviderResult = new EntertainmentProvider(
+                    orgName,
+                    orgAddress,
+                    paymentAccountEmail,
+                    mainRepName,
+                    mainRepEmail,
+                    passWord,
+                    otherRepNames,
+                    otherRepEmails);
         } else {System.out.println("Failed to register entertainment provider because verification is not passed");}
     }
 

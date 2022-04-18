@@ -5,7 +5,7 @@ import model.User;
 
 import java.util.Map;
 
-public class LoginCommand {
+public class LoginCommand implements ICommand{
 
     private String email;
     private String password;

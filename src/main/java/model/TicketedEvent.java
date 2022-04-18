@@ -18,13 +18,13 @@ public class TicketedEvent extends Event{
 
     public double getOriginalTicketPrice(){return this.ticketPrice;}
 
-    //public double getDiscountedTicketPrice(){}  //dont need as group of 3?
+    //public double getDiscountedTicketPrice(){}  //dont need as group of 3
 
     public int getNumTickets(){return numTickets;}
 
-    //public String getSponsorAccountEmail(){}    //dont need as group of 3?
+    //public String getSponsorAccountEmail(){}    //dont need as group of 3
 
-    //public boolean isSponsored(){}              //dont need as group of 3?
+    //public boolean isSponsored(){}              //dont need as group of 3
 
     public String toString(){
 

@@ -23,9 +23,11 @@ public class CreateTicketedEventCommand extends CreateEventCommand {
 
     public void execute(Context context){
         if (isUserAllowedToCreateEvent(context)) {
-            EventState eventState = (EventState) context.getEventState();
-            UserState userState = (UserState) context.getUserState();
-            eventState.createTicketedEvent((EntertainmentProvider) userState.getCurrentUser(),
+            //EventState eventState = (EventState) context.getEventState();
+            //UserState userState = (UserState) context.getUserState();
+            EntertainmentProvider curr = (EntertainmentProvider) context.getUserState().getCurrentUser();
+
+            context.getEventState().createTicketedEvent(curr,
                     title, type, ticketPrice, numTickets);
         }
     }

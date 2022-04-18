@@ -1,5 +1,7 @@
 package model;
 
+import state.IBookingState;
+
 import java.util.Collection;
 
 public abstract class Event {
@@ -33,7 +35,10 @@ public abstract class Event {
 
     public EventStatus getStatus(){return this.status;}
 
-    public void cancel() {this.status = EventStatus.CANCELLED;}
+    public void cancel() {
+        this.status = EventStatus.CANCELLED;
+
+    }
 
     public void addPerformance(EventPerformance performance){
         performances.add(performance);

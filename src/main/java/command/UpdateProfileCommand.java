@@ -2,7 +2,7 @@ package command;
 
 import controller.Context;
 
-public class UpdateProfileCommand {
+public class UpdateProfileCommand implements ICommand{
 
     protected Boolean successResult;
 
