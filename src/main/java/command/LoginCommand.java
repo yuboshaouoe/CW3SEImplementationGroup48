@@ -25,6 +25,12 @@ public class LoginCommand implements ICommand{
             if (user1.checkPasswordMatch(password)) {
                 result = user1;
             }
+            else{
+                System.out.println("fail2");
+            }
+        }
+        else{
+            System.out.println("fail1");
         }
     }
 

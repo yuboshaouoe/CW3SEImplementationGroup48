@@ -37,6 +37,7 @@ public class RegisterConsumerCommand implements ICommand{
         if (!registeredUser && allNotNone){
             newConsumerResult = new Consumer(name, email, phoneNumber, password, paymentAccountEmail);
             context.getUserState().setCurrentUser(newConsumerResult);
+            System.out.println(context.getUserState().getCurrentUser().toString());
         } else {System.out.println("Failed to register consumer because verification is not passed");}
     }
 
