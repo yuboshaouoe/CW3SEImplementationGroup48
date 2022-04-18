@@ -27,7 +27,7 @@ public class GovernmentReport2Command implements ICommand{
     private List<Consumer> result;
 
 
-    GovernmentReport2Command(String orgName){
+    public GovernmentReport2Command(String orgName){
         this.orgName = orgName;
         this.result = null;
     }

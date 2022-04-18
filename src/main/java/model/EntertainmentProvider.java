@@ -2,6 +2,7 @@ package model;
 
 import java.util.List;
 import external.EntertainmentProviderSystem;
+import external.MockEntertainmentProviderSystem;
 
 public class EntertainmentProvider extends User{
 
@@ -29,6 +30,7 @@ public class EntertainmentProvider extends User{
         this.mainRepName = mainRepName;
         this.otherRepNames = otherRepNames;
         this.otherRepEmails = otherRepEmails;
+        this.providerSystem = new MockEntertainmentProviderSystem(orgName, orgAddress);
     }
 
     public void addEvent(Event event){events.add(event);}

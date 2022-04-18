@@ -61,6 +61,7 @@ public class RegisterEntertainmentProviderCommand implements ICommand{
                     passWord,
                     otherRepNames,
                     otherRepEmails);
+            context.getUserState().setCurrentUser(newEntertainmentProviderResult);
         } else {System.out.println("Failed to register entertainment provider because verification is not passed");}
     }
 

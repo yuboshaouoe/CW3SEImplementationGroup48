@@ -61,7 +61,7 @@ public class EventState implements IEventState{
         TicketedEvent newEvent = new TicketedEvent(nextEventNumber, organiser, title, type, ticketPrice,numTickets);
         nextEventNumber ++;
         events.add(newEvent);
-        newEvent.getOrganiser().getProviderSystem().recordNewEvent(newEvent.getEventNumber(),
+        organiser.getProviderSystem().recordNewEvent(newEvent.getEventNumber(),
                                                                    newEvent.getTitle(),
                                                                    newEvent.getNumTickets());
         return newEvent;

@@ -4,35 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="All command implemented">
+    <list default="true" id="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" name="Changes" comment="All commands implemented">
       <change afterPath="$PROJECT_DIR$/src/test/java/GovernmentReport2SystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RegisterConsumerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestBookingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestEventState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestUserState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/AddEventPerformanceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/AddEventPerformanceCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CreateEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CreateEventCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CreateTicketedEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CreateTicketedEventCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/GetAvailablePerformanceTicketsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/GetAvailablePerformanceTicketsCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/GovernmentReport2Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/GovernmentReport2Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/LogoutCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/RegisterConsumerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/RegisterConsumerCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/RegisterEntertainmentProviderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/RegisterEntertainmentProviderCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/UpdateEntertainmentProviderProfileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/UpdateEntertainmentProviderProfileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/UpdateProfileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/UpdateProfileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/TicketedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TicketedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/external/MockEntertainmentProviderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/external/MockEntertainmentProviderSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/EntertainmentProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EntertainmentProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/state/EventState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/EventState.java" afterDir="false" />
     </list>
     <list id="a1aa23b0-ed06-42c1-bef5-31c86c9cc020" name="Changes by callu" comment="Changes by callum 1" />
-    <list id="17aab2b8-4f9c-4c94-92c5-47810a47d13d" name="Changes by Callum" comment="Unfinished CancelEventCommand">
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/BookEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/BookEventCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CancelBookingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CancelBookingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CancelEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CancelEventCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CreateNonTicketedEventCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CreateNonTicketedEventCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/UpdateConsumerProfileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/UpdateConsumerProfileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/UpdateEntertainmentProviderProfileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/UpdateEntertainmentProviderProfileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/UpdateProfileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/UpdateProfileCommand.java" afterDir="false" />
+    <list id="13b2de99-a97b-4a40-b22c-762fdffb13fc" name="Changes by Callum" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/logging/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logging/Logger.java" afterDir="false" />
     </list>
-    <list id="b4fb2e9c-7299-4842-8596-12af3895c78e" name="Changes by jiajili" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +69,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -86,25 +77,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/command/UpdateEntertainmentProviderProfileCommand.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="5" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="5" end1="5" start2="7" end2="10" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="6" end1="7" start2="11" end2="21" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="9" end1="17" start2="23" end2="65" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="18" end1="19" start2="66" end2="76" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="20" end1="21" start2="77" end2="84" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/command/UpdateProfileCommand.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="6" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="4" end1="5" start2="7" end2="8" changelist="e6b01fbc-eb7d-4aa3-b329-55b1a7b7586c" />
-        <range start1="12" end1="13" start2="15" end2="26" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-        <range start1="14" end1="15" start2="27" end2="33" changelist="17aab2b8-4f9c-4c94-92c5-47810a47d13d" />
-      </ranges>
-    </file>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-14.0.2/lib/src.zip!/java.base/java/lang/UnsupportedOperationException.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -123,6 +97,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Users/asi2m/UOE coursework/CW3SEImplementationGroup48/src/main/java/external",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -137,51 +113,15 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asi2m\UOE coursework\CW3SEImplementationGroup48\src\main\java\external" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="command" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.CW3SEImplementationGroup48 [build]">
-    <configuration name="CW3SEImplementationGroup48 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CW3SEImplementationGroup48 [properties]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="properties" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GovernmentReport1SystemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.RegisterConsumerTest.registerConsumerTest">
+    <configuration name="ConsumerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -194,7 +134,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;GovernmentReport1SystemTest&quot;" />
+            <option value="&quot;ConsumerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,11 +144,91 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GovernmentReport2SystemTest.getConsumersWithActiveBookingsInOrgActiveEvents" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;GovernmentReport2SystemTest.getConsumersWithActiveBookingsInOrgActiveEvents&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LoginCommandTest.getConsumersWithActiveBookingsInOrgActiveEvents" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;LoginCommandTest.getConsumersWithActiveBookingsInOrgActiveEvents&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegisterConsumerTest.registerConsumerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;RegisterConsumerTest.registerConsumerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GovernmentReport2SystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CW3SEImplementationGroup48.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GovernmentReport2SystemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GovernmentReport1SystemTest" />
-        <item itemvalue="Gradle.CW3SEImplementationGroup48 [build]" />
-        <item itemvalue="Gradle.CW3SEImplementationGroup48 [properties]" />
+        <item itemvalue="Gradle.RegisterConsumerTest.registerConsumerTest" />
+        <item itemvalue="Gradle.GovernmentReport2SystemTest.getConsumersWithActiveBookingsInOrgActiveEvents" />
+        <item itemvalue="Gradle.ConsumerTest" />
+        <item itemvalue="Gradle.LoginCommandTest.getConsumersWithActiveBookingsInOrgActiveEvents" />
+        <item itemvalue="JUnit.GovernmentReport2SystemTest" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +318,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650234276811</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="All commands implemented">
+      <created>1650255058821</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1650255058821</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Callum finish command">
+      <created>1650255084860</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1650255084860</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,8 +357,10 @@
     <MESSAGE value="logging finished by Callum" />
     <MESSAGE value="Notify Provider system on creating/canceling events, both LoginCommand and LogoutCommand completed" />
     <MESSAGE value="Slight changes in BookEventCommand" />
-    <MESSAGE value="Unfinished CancelEventCommand" />
     <MESSAGE value="All command implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="All command implemented" />
+    <MESSAGE value="All commands implemented" />
+    <MESSAGE value="Unfinished CancelEventCommand" />
+    <MESSAGE value="Callum finish command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Callum finish command" />
   </component>
 </project>

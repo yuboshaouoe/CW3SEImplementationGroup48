@@ -1,10 +1,7 @@
 package external;
 
 import java.time.LocalDateTime;
-import java.util.AbstractMap;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 public class MockEntertainmentProviderSystem implements EntertainmentProviderSystem {
@@ -28,17 +25,18 @@ public class MockEntertainmentProviderSystem implements EntertainmentProviderSys
                                            String orgAddress) {
         this.orgName = orgName;
         this.orgAddress = orgAddress;
-        this.eventNameRecord = Collections.emptyMap();
-        this.eventTicketRecord = Collections.emptyMap();
-        this.performanceRecord = Collections.emptyMap();
-        this.timeRecord = Collections.emptyMap();
-        this.consumerRecord = Collections.emptyMap();
-        this.bookedTicketsRecord = Collections.emptyMap();
+        this.eventNameRecord = new HashMap<>();
+        this.eventTicketRecord = new HashMap<>();
+        this.performanceRecord = new HashMap<>();
+        this.timeRecord = new HashMap<>();
+        this.consumerRecord = new HashMap<>();
+        this.bookedTicketsRecord = new HashMap<>();
     }
 
     public void recordNewEvent(long eventNumber,
                                String title,
                                int numTickets) {
+        System.out.println("bruh");
          eventNameRecord.put(eventNumber, title);
          eventTicketRecord.put(eventNumber, numTickets);
     }
