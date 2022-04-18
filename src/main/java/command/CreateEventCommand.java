@@ -21,7 +21,6 @@ public class CreateEventCommand implements ICommand{
         return currentUser instanceof EntertainmentProvider;
     }
 
-    @Override
     public void execute(Context context) {}
 
     public Long getResult(){
